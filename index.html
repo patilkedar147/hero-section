@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myArt Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="banner">
+        <img src="" class="logo" alt="logo">
+        <div class="banner-text">
+            <h1>The <span>Art</span> Studio</h1>
+            <p>“I am an artist at living ,my work of art is my life.”</p>
+            <div class="btn">
+                <a href="#"> <span></span> Find out</a>
+                <a href="#"> <span></span> Read More</a>
+            </div>
+        </div>
+
+    </section>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Meet us</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div id="menuBtn">
+        <img src="menu.png" alt="" id="menu">
+
+    </div>
+    <script>
+        let menuBtn = document.getElementById("menuBtn")
+        let sidenav = document.getElementById("sidenav")
+        let menu = document.getElementById("menu")
+
+        sidenav.style.right = "-250px"
+
+
+        menuBtn.onclick = function () {
+            if (sidenav.style.right == "-250px") {
+                sidenav.style.right = "0";
+                
+            }
+            else {
+                sidenav.style.right = "-250px";
+               
+            }
+        }
+
+    </script>
+</body>
+
+</html>
